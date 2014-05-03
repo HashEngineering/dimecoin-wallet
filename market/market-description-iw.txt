@@ -14,7 +14,7 @@ FEATURES:
 לפרטים נוספים : http://www.qrk.cc/
 
 הארנק הוא פרויקט בקוד פתוח בגוגל, אם ברצונך לתרום:
-https://github.com/HashEngineering/Quark-wallet
+https://github.com/HashEngineering/Dimecoin-wallet
 
 רישיון : GPLv3
 שים לב: השימוש הוא באחריות המשתמש.

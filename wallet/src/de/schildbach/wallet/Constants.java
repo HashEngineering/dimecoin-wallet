@@ -27,7 +27,7 @@ import com.google.bitcoin.core.NetworkParameters;
 import com.google.bitcoin.params.MainNetParams;
 import com.google.bitcoin.params.TestNet3Params;
 import com.google.bitcoin.core.CoinDefinition;
-import hashengineering.quarkcoin.wallet.R;
+import hashengineering.dimecoin.wallet.R;
 
 
 
@@ -86,9 +86,9 @@ public class Constants
 	public static final int ADDRESS_FORMAT_GROUP_SIZE = 4;
 	public static final int ADDRESS_FORMAT_LINE_SIZE = 12;
 
-	public static final int BTC_MAX_PRECISION = 5;      //For Quark, Maximum of 5 decimal places for QRK
-	public static final int MBTC_MAX_PRECISION = 2;     //For Quark, maximum of 2 decimal places for mQRK
-	public static final int LOCAL_PRECISION = 6;        //For Quark in BTC, USD, etc
+	public static final int BTC_MAX_PRECISION = 5;      //For Dimecoin, Maximum of 5 decimal places for QRK
+	public static final int MBTC_MAX_PRECISION = 2;     //FDimecoinark, maximum of 2 decimal places for mQRK
+	public static final int LOCAL_PRECISION = 6;        //Dimecoin Quark in BTC, USD, etc
 
 	public static final String DONATION_ADDRESS = CoinDefinition.DONATION_ADDRESS;
 	public static final String REPORT_EMAIL = "hashengineeringsolutions@gmail.com";
