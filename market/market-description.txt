@@ -12,7 +12,7 @@ FEATURES:
 • App widget for Dimecoin balance.
 
 You can find more about Dimecoin at
-http://www.qrk.cc/
+http://www.dimecoin.co/
 
 If you want to contribute to Dimecoin Wallet, the project is located at
 https://github.com/HashEngineering/Dimecoin-wallet

@@ -64,7 +64,10 @@
 		android:icon="@drawable/app_icon"
 		android:label="@string/app_name"
 		android:theme="@style/My.Theme" >
-
+        <activity
+                android:name="de.schildbach.wallet.ui.WalletActivity"
+                android:configChanges="keyboard|keyboardHidden"
+                android:launchMode="singleTask" />
 
 		<activity-alias
 			android:name="de.schildbach.wallet.WalletActivity"
@@ -77,7 +80,7 @@
 			<intent-filter>
 				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-				<data android:mimeType="application/x-qrktx" />
+				<data android:mimeType="application/x-dimetx" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
@@ -92,7 +95,7 @@
 			<intent-filter android:label="@string/send_coins_activity_title" >
 				<action android:name="android.intent.action.VIEW" />
 
-				<data android:scheme="quark" />
+				<data android:scheme="dimecoin" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE" />
@@ -100,21 +103,21 @@
 			<intent-filter android:label="@string/send_coins_activity_title" >
 				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-				<data android:scheme="quark" />
+				<data android:scheme="dimecoin" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
 			<intent-filter android:label="@string/send_coins_activity_title">
 				<action android:name="android.intent.action.VIEW" />
 
-				<data android:mimeType="application/quark-paymentrequest" />
+				<data android:mimeType="application/dimecoin-paymentrequest" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
 			<intent-filter android:label="@string/send_coins_activity_title" >
 				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-				<data android:mimeType="application/quark-paymentrequest" />
+				<data android:mimeType="application/dimecoin-paymentrequest" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
@@ -166,7 +169,7 @@
 
 				<category android:name="android.intent.category.DEFAULT" />
 
-				<data android:mimeType="x-quarkcoin/private-keys" />
+				<data android:mimeType="x-dimecoin/private-keys" />
 				<data android:mimeType="application/octet-stream" />
 			</intent-filter>
 		</activity>
@@ -180,12 +183,12 @@
         <!-- Need to update this for the coin -->
 		<provider
 			android:name="de.schildbach.wallet.AddressBookProvider"
-			android:authorities="hashengineering.quarkcoin.wallet.address_book"
+			android:authorities="hashengineering.dimecoin.wallet.address_book"
 			android:exported="false" />
         <!-- Need to update this for the coin -->
 		<provider
 			android:name="de.schildbach.wallet.ExchangeRatesProvider"
-			android:authorities="hashengineering.quarkcoin.wallet.exchange_rates"
+			android:authorities="hashengineering.dimecoin.wallet.exchange_rates"
 			android:exported="false" />
 
 		<receiver
